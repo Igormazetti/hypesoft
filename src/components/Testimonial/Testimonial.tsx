@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FC, useState } from 'react'
 
 import { PinkLine } from '../PinkLine'
@@ -46,8 +45,8 @@ export const Testimonial: FC = () => {
         </div>
         <div className="testimonial">
           <div className="rating">
-            <Image className="star" src={speaker.rate} alt="rating" />
-            <Image src={Quote} alt="quote" />
+            <img className="star" src={speaker.rate.src} alt="rating" />
+            <img src={Quote.src} alt="quote" />
           </div>
           <p>{speaker.text}</p>
         </div>
