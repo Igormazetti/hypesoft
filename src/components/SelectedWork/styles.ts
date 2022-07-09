@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   padding: 100px 0;
@@ -7,8 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   width: 100%;
-  height: 1247px;
-`;
+`
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -25,7 +24,7 @@ export const TitleWrapper = styled.div`
       text-decoration-color: #7d00ff;
     }
   }
-`;
+`
 
 export const CardsWrapper = styled.div`
   display: flex;
@@ -37,4 +36,4 @@ export const CardsWrapper = styled.div`
   padding: 0px;
   gap: 24px;
   margin-top: 52px;
-`;
+`
