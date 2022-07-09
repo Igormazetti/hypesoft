@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 import Youtube from '../../assets/yt.png'
 import Google from '../../assets/google.png'
@@ -17,19 +17,19 @@ export const CompanyLogo: FC = () => (
     </div>
     <div className="logos">
       <button type="button" className="logoBtn">
-        <Image src={Youtube} alt="youtube logo" />
+        <img src={Youtube.src} alt="youtube logo" />
       </button>
       <button type="button" className="logoBtn">
-        <Image src={Google} alt="google logo" />
+        <img src={Google.src} alt="google logo" />
       </button>
       <button type="button" className="logoBtn">
-        <Image src={Adobe} alt="adobe logo" />
+        <img src={Adobe.src} alt="adobe logo" />
       </button>
       <button type="button" className="logoBtn">
-        <Image src={Sketch} alt="sketch logo" />
+        <img src={Sketch.src} alt="sketch logo" />
       </button>
       <button type="button" className="logoBtn next">
-        <Image src={Arrow} alt="next" />
+        <img src={Arrow.src} alt="next" />
       </button>
     </div>
   </Container>
