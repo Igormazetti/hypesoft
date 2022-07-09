@@ -2,33 +2,48 @@ import styled from 'styled-components'
 import { FaHeart } from 'react-icons/fa'
 
 export const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1308px;
-  padding: 0 5%;
-`
-
-export const HomeWrapper = styled.div`
-  display: flex;
   position: relative;
-  justify-content: center;
+  overflow-x: hidden;
 
   .purpleBackground {
     position: absolute;
     top: -73px;
-    right: -394px;
+    right: -290px;
     width: 792px;
-    height: 1047px;
+    height: 1120px;
     background: #7d00ff;
     opacity: 0.6;
   }
 
+  @media screen and (max-width: 1025px) {
+    .purpleBackground {
+      display: none;
+    }
+  }
+`
+
+export const HomeWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
   .igorimg {
-    width: 760px;
+    max-width: 760px;
     height: 974px;
-    margin-right: -176px;
+    margin-right: -75px;
+
     z-index: 2;
-    margin-left: auto;
     filter: brightness(0.8);
+  }
+
+  @media screen and (max-width: 1025px) {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    .igorimg {
+      display: none;
+    }
   }
 `
 
@@ -39,8 +54,8 @@ export const HomeContainer = styled.div`
 
   #greetings {
     margin-top: 210px;
-    position: absolute;
     background-color: transparent;
+    position: absolute;
     z-index: 3;
 
     .greetings-content {
@@ -76,6 +91,25 @@ export const HomeContainer = styled.div`
     margin-top: 32px;
     background-color: transparent;
   }
+
+  @media screen and (max-width: 1025px) {
+    > div {
+      align-items: center;
+      justify-content: center;
+    }
+
+    #greetings {
+      position: unset;
+      margin: 100px auto;
+    }
+
+    #greetings .greetings-content {
+      width: unset;
+      max-width: fit-content;
+      font-size: 60px;
+      line-height: unset;
+    }
+  }
 `
 
 export const Footer = styled.footer`
@@ -99,4 +133,11 @@ export const PinkHeart = styled(FaHeart)`
   }
   width: 14px;
   height: 14px;
+`
+
+export const Wrapper = styled.div`
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
 `

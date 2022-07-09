@@ -1,14 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.header`
   display: flex;
-  justify-content: flex-end;
   padding: 28px 0;
   background-color: transparent;
 
   div {
     display: flex;
     gap: 40px;
+    margin-left: auto;
 
     a {
       z-index: 1;
@@ -30,4 +30,4 @@ export const Container = styled.header`
       }
     }
   }
-`;
+`
