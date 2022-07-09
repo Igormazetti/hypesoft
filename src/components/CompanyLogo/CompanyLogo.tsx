@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Image from 'next/future/image'
 
 import Youtube from '../../assets/yt.png'
 import Google from '../../assets/google.png'

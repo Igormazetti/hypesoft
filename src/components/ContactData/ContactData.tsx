@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Image from 'next/future/image'
 
 import { FollowMe } from '../FollowMe'
 
@@ -15,7 +14,7 @@ export const ContactData: FC = () => (
     <DataWrapper>
       <div className="data-content">
         <div className="img-container">
-          <Image src={Pin} alt="map pin" />
+          <img src={Pin.src} alt="map pin" />
         </div>
         <div>
           Rua Capitão Procópio Martins de Oliveira, 375, São Paulo - 14500-000,
@@ -24,13 +23,13 @@ export const ContactData: FC = () => (
       </div>
       <div className="data-content">
         <div className="img-container">
-          <Image src={EmailIcon} alt="email icon" />
+          <img src={EmailIcon.src} alt="email icon" />
         </div>
         <div>iigormazetti@hotmail.com</div>
       </div>
       <div className="data-content">
         <div className="img-container">
-          <Image src={PhoneIcon} alt="phone icon" />
+          <img src={PhoneIcon.src} alt="phone icon" />
         </div>
         <div>+55 16 99996-5151</div>
       </div>
