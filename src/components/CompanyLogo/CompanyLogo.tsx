@@ -1,10 +1,10 @@
 import { FC } from 'react'
 
-import Youtube from '../../assets/yt.png'
-import Google from '../../assets/google.png'
-import Adobe from '../../assets/adobe.png'
-import Sketch from '../../assets/sketch.png'
-import Arrow from '../../assets/arrowlogo.png'
+import Youtube from '../../../public/assets/yt.png'
+import Google from '../../../public/assets/google.png'
+import Adobe from '../../../public/assets/adobe.png'
+import Sketch from '../../../public/assets/sketch.png'
+import Arrow from '../../../public/assets/arrowlogo.png'
 
 import { Container } from './styles'
 

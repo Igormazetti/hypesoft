@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import bkgimg from "../../assets/bkgimg.png";
+import styled from 'styled-components'
+import bkgimg from '../../../public/assets/bkgimg.png'
 
 export const Container = styled.section`
   padding: 100px 0 121px;
@@ -31,7 +31,7 @@ export const Container = styled.section`
       z-index: 0;
     }
   }
-`;
+`
 
 export const Info = styled.article`
   margin-top: 29px;
@@ -66,7 +66,7 @@ export const Info = styled.article`
   #about-btn {
     margin-top: 32px;
   }
-`;
+`
 
 export const InfoBar = styled.div`
   display: flex;
@@ -99,4 +99,4 @@ export const InfoBar = styled.div`
     align-items: center;
     gap: 16px;
   }
-`;
+`

@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import { FC, useState } from 'react'
 import { IconBaseProps } from 'react-icons'
 
-import Seta from '../../assets/seta.png'
+import Seta from '../../../public/assets/seta.png'
 
 import { Container, Line } from './styles'
 
@@ -26,7 +25,7 @@ export const ServiceCard: FC<CardProps> = ({ icon: Icon, text }) => {
         <Line />
         <div className="discuss-wrapper">
           <span className="discuss">DISCUSS NOW</span>
-          <Image className="seta" src={Seta} alt="seta" />
+          <img className="seta" src={Seta.src} alt="seta" />
         </div>
       </div>
     </Container>

@@ -1,23 +1,23 @@
-import Instagram from '../../assets/instagram.png'
-import Github from '../../assets/github.png'
-import LinkedIn from '../../assets/linkedin.png'
-import Facebook from '../../assets/facebook.png'
+import { BsLinkedin } from 'react-icons/bs'
+import { BsInstagram } from 'react-icons/bs'
+import { GoMarkGithub } from 'react-icons/go'
+import { ImFacebook2 } from 'react-icons/im'
 
 export const data = [
   {
     link: 'https://www.linkedin.com/in/igormazetti/',
-    imgPath: LinkedIn,
+    imgPath: BsLinkedin,
   },
   {
     link: 'https://github.com/IgormLinkazetti',
-    imgPath: Github,
+    imgPath: GoMarkGithub,
   },
   {
     link: 'https://www.facebook.com/igor.mazetti.1',
-    imgPath: Facebook,
+    imgPath: ImFacebook2,
   },
   {
     link: 'https://www.instagram.com/igmazetti/',
-    imgPath: Instagram,
+    imgPath: BsInstagram,
   },
 ]

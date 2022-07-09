@@ -13,7 +13,7 @@ export const FollowMe: FC = () => (
           <SocialLink
             key={index}
             link={item.link}
-            imgpath={item.imgPath.src}
+            imgpath={item.imgPath}
           ></SocialLink>
         ))}
     </div>

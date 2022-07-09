@@ -6,7 +6,7 @@ import { Seta } from '../Seta'
 
 import { data } from './testimonialdata'
 
-import Quote from '../../assets/Quote.png'
+import Quote from '../../../public/assets/Quote.png'
 
 import { Container, TitleWrapper, TestimonialWrapper } from './styles'
 

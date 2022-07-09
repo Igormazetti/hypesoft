@@ -1,14 +1,15 @@
 import { FC } from 'react'
+import { IconType } from 'react-icons'
 
 import { CustomLink } from './styles'
 
 interface SocialLinkProps {
-  imgpath: string
+  imgpath: IconType
   link: string
 }
 
-export const SocialLink: FC<SocialLinkProps> = ({ link, imgpath }) => (
+export const SocialLink: FC<SocialLinkProps> = ({ link, imgpath: ImgPath }) => (
   <CustomLink target="_blank" href={link}>
-    <img src={imgpath} alt={imgpath} width="56" height="56" />
+    <ImgPath size={20} />
   </CustomLink>
 )

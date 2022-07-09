@@ -1,4 +1,4 @@
-import Rating from '../../assets/Rating.png'
+import Rating from '../../../public/assets/Rating.png'
 
 export const data = [
   {

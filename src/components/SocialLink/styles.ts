@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const CustomLink = styled.a`
   display: flex;
@@ -12,18 +12,22 @@ export const CustomLink = styled.a`
   border: 1px solid #dfe3eb;
   border-radius: 3px;
 
-  background: #ffffff;
+  background: #fff;
   transition: filter 0.2s;
+
+  svg {
+    color: #fff;
+    border: 0.5px solid #000;
+    border-radius: 4px;
+
+    path {
+      fill: #fff;
+    }
+  }
 
   &:hover {
     background-color: #7d00ff;
     border: none;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
   }
-
-  img {
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-  }
-`;
+`

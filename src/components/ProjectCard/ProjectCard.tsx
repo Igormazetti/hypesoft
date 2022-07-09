@@ -1,7 +1,6 @@
 import { FC } from 'react'
-import Image from 'next/image'
 
-import Seta from '../../assets/seta.png'
+import Seta from '../../../public/assets/seta.png'
 
 import { Container } from './styles'
 
@@ -13,7 +12,7 @@ interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> = ({ nome, imgpath, link }) => (
   <Container>
-    <Image
+    <img
       className="principalimg"
       src={imgpath}
       width="350"
@@ -25,7 +24,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ nome, imgpath, link }) => (
       <a target="_blank" href={link} className="discuss" rel="noreferrer">
         VIEW PROJECT
       </a>
-      <Image className="seta" src={Seta} alt="seta" />
+      <img className="seta" src={Seta.src} alt="seta" />
     </div>
   </Container>
 )

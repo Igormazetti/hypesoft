@@ -12,8 +12,8 @@ import { Testimonial } from '../components/Testimonial'
 import { CompanyLogo } from '../components/CompanyLogo'
 import { SelectedWork } from '../components/SelectedWork'
 
-import igor from '../assets/igor.png'
-import Hypesoft from '../assets/hypesoft.png'
+import igor from '../../public/assets/igor.png'
+import Hypesoft from '../../public/assets/hypesoft.png'
 
 import {
   Container,

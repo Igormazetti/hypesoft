@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
     font-size: 32px;
     line-height: 40px;
   }
-`;
+`
 
 export const DataWrapper = styled.div`
   display: flex;
@@ -29,9 +29,11 @@ export const DataWrapper = styled.div`
   width: 100%;
 
   div,
-  img {
+  svg {
     color: #242424;
     background-color: transparent;
+
+    fill: #ed1ca6;
   }
 
   .data-content {
@@ -43,7 +45,7 @@ export const DataWrapper = styled.div`
     .img-container {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       padding: 25px;
       width: 80px;
       height: 80px;
@@ -57,5 +59,28 @@ export const DataWrapper = styled.div`
     display: flex;
     align-items: center;
     padding: 0 5px;
+
+    a {
+      width: 56px;
+      height: 56px;
+
+      svg {
+        color: #fff;
+        border: none;
+
+        path {
+          fill: #242424;
+        }
+      }
+
+      &:hover {
+        color: #242424;
+        border: none;
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
   }
-`;
+`

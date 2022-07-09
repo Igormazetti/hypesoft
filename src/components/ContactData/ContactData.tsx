@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 import { FollowMe } from '../FollowMe'
 
-import Pin from '../../assets/pin.png'
-import EmailIcon from '../../assets/Group.png'
-import PhoneIcon from '../../assets/phone.png'
+import { RiMapPinLine } from 'react-icons/ri'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsTelephone } from 'react-icons/bs'
 
 import { Container, DataWrapper } from './styles'
 
@@ -14,7 +14,7 @@ export const ContactData: FC = () => (
     <DataWrapper>
       <div className="data-content">
         <div className="img-container">
-          <img src={Pin.src} alt="map pin" />
+          <RiMapPinLine size={56} />
         </div>
         <div>
           Rua Capitão Procópio Martins de Oliveira, 375, São Paulo - 14500-000,
@@ -23,13 +23,13 @@ export const ContactData: FC = () => (
       </div>
       <div className="data-content">
         <div className="img-container">
-          <img src={EmailIcon.src} alt="email icon" />
+          <AiOutlineMail size={56} />
         </div>
         <div>iigormazetti@hotmail.com</div>
       </div>
       <div className="data-content">
         <div className="img-container">
-          <img src={PhoneIcon.src} alt="phone icon" />
+          <BsTelephone size={56} />
         </div>
         <div>+55 16 99996-5151</div>
       </div>
