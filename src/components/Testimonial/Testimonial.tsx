@@ -1,13 +1,17 @@
-import React, { useState } from "react";
-import { Container, TitleWrapper, TestimonialWrapper } from "./styles";
-import PinkLine from "../PinkLine";
-import Seta from "../Seta";
-import data from "./testimonialdata";
-import Quote from "../../assets/Quote.png";
-import Image from "next/image";
+import Image from 'next/image'
+import { FC, useState } from 'react'
 
-const Testimonial: React.FC = () => {
-  const [speaker, setSpeaker] = useState(data[0]);
+import { PinkLine } from '../PinkLine'
+import { Seta } from '../Seta'
+
+import { data } from './testimonialdata'
+
+import Quote from '../../assets/Quote.png'
+
+import { Container, TitleWrapper, TestimonialWrapper } from './styles'
+
+export const Testimonial: FC = () => {
+  const [speaker, setSpeaker] = useState(data[0])
 
   return (
     <Container>
@@ -49,7 +53,5 @@ const Testimonial: React.FC = () => {
         </div>
       </TestimonialWrapper>
     </Container>
-  );
-};
-
-export default Testimonial;
+  )
+}

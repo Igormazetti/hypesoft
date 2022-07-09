@@ -1,41 +1,39 @@
-import Pokedex from "../../assets/1pokedex.png";
-import Tunes from "../../assets/tunes.png";
-import Starwars from "../../assets/starwars.png";
-import Restaurant from "../../assets/restaurant.png";
-import Dtmoney from "../../assets/1dtmoney.png";
-import Gameflix from "../../assets/gameflix.png";
+import Pokedex from '../../assets/1pokedex.png'
+import Tunes from '../../assets/tunes.png'
+import Starwars from '../../assets/starwars.png'
+import Restaurant from '../../assets/restaurant.png'
+import Dtmoney from '../../assets/1dtmoney.png'
+import Gameflix from '../../assets/gameflix.png'
 
-const data = [
+export const data = [
   {
-    nome: "Pokedex-Project",
+    nome: 'Pokedex-Project',
     imgpath: Pokedex,
-    link: "https://github.com/Igormazetti/Pokedex-Project",
+    link: 'https://github.com/Igormazetti/Pokedex-Project',
   },
   {
-    nome: "Trybe Tunes",
+    nome: 'Trybe Tunes',
     imgpath: Tunes,
-    link: "https://github.com/Igormazetti/TrybeTunes",
+    link: 'https://github.com/Igormazetti/TrybeTunes',
   },
   {
-    nome: "StarWars Planets",
+    nome: 'StarWars Planets',
     imgpath: Starwars,
-    link: "https://github.com/Igormazetti/StarWars-Planets",
+    link: 'https://github.com/Igormazetti/StarWars-Planets',
   },
   {
-    nome: "Restaurant Search",
+    nome: 'Restaurant Search',
     imgpath: Restaurant,
-    link: "https://github.com/Igormazetti/RestaurantSearch",
+    link: 'https://github.com/Igormazetti/RestaurantSearch',
   },
   {
-    nome: "DtMoney",
+    nome: 'DtMoney',
     imgpath: Dtmoney,
-    link: "https://github.com/Igormazetti/dtMoney",
+    link: 'https://github.com/Igormazetti/dtMoney',
   },
   {
-    nome: "Gameflix",
+    nome: 'Gameflix',
     imgpath: Gameflix,
-    link: "https://github.com/Igormazetti/gameflix",
+    link: 'https://github.com/Igormazetti/gameflix',
   },
-];
-
-export default data;
+]

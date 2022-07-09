@@ -1,10 +1,11 @@
-import React from "react";
-import data from "./socialdata";
-import SocialLink from "../SocialLink";
+import { FC } from 'react'
 
-import { Container } from "./styles";
+import { SocialLink } from '../SocialLink'
 
-const FollowMe: React.FC = () => (
+import { data } from './socialdata'
+import { Container } from './styles'
+
+export const FollowMe: FC = () => (
   <Container>
     <div>
       {data &&
@@ -17,6 +18,4 @@ const FollowMe: React.FC = () => (
         ))}
     </div>
   </Container>
-);
-
-export default FollowMe;
+)

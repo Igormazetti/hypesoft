@@ -1,16 +1,19 @@
-import React, { useState } from "react";
-import { Container, Line } from "./styles";
-import { IconBaseProps } from "react-icons";
-import Seta from "../../assets/seta.png";
-import Image from "next/image";
+import Image from 'next/image'
+import { FC, useState } from 'react'
+import { IconBaseProps } from 'react-icons'
+
+import Seta from '../../assets/seta.png'
+
+import { Container, Line } from './styles'
 
 interface CardProps {
-  text: string;
-  icon: React.ComponentType<IconBaseProps>;
+  text: string
+  icon: React.ComponentType<IconBaseProps>
 }
 
-const ServiceCard: React.FC<CardProps> = ({ icon: Icon, text }) => {
-  const [hovering, isHovering] = useState(false);
+export const ServiceCard: FC<CardProps> = ({ icon: Icon, text }) => {
+  const [hovering, isHovering] = useState(false)
+
   return (
     <Container
       hovering={hovering}
@@ -27,7 +30,5 @@ const ServiceCard: React.FC<CardProps> = ({ icon: Icon, text }) => {
         </div>
       </div>
     </Container>
-  );
-};
-
-export default ServiceCard;
+  )
+}

@@ -1,18 +1,19 @@
-import React from "react";
-import Header from "../components/Header";
-import About from "../components/About";
-import Button from "../components/CommonBtn";
-import FollowMe from "../components/FollowMe";
-import MyService from "../components/MyService";
-import SelectedWork from "../components/SelectedWork";
-import CompanyLogo from "../components/CompanyLogo";
-import Banner from "../components/Banner";
-import Contact from "../components/Contact";
-import Testimonial from "../components/Testimonial";
-import Image from "next/future/image";
+import { FC } from 'react'
+import Image from 'next/future/image'
 
-import igor from "../assets/igor.png";
-import Hypesoft from "../assets/hypesoft.png";
+import { About } from '../components/About'
+import { Banner } from '../components/Banner'
+import { Header } from '../components/Header'
+import { Contact } from '../components/Contact'
+import { CommonButton } from '../components/CommonBtn'
+import { FollowMe } from '../components/FollowMe'
+import { MyService } from '../components/MyService'
+import { Testimonial } from '../components/Testimonial'
+import { CompanyLogo } from '../components/CompanyLogo'
+import { SelectedWork } from '../components/SelectedWork'
+
+import igor from '../assets/igor.png'
+import Hypesoft from '../assets/hypesoft.png'
 
 import {
   Container,
@@ -20,9 +21,9 @@ import {
   HomeWrapper,
   Footer,
   PinkHeart,
-} from "./styles";
+} from './styles'
 
-const Home: React.FC = () => (
+const Home: FC = () => (
   <Container>
     <Header />
     <HomeWrapper>
@@ -37,8 +38,8 @@ const Home: React.FC = () => (
             Developer.
           </p>
           <div id="btn-container">
-            <Button width="131px" text="HIRE ME" />
-            <Button width="170px" text="VIEW WORK" />
+            <CommonButton width="131px" text="HIRE ME" />
+            <CommonButton width="170px" text="VIEW WORK" />
           </div>
         </article>
         <FollowMe />
@@ -66,6 +67,6 @@ const Home: React.FC = () => (
       </p>
     </Footer>
   </Container>
-);
+)
 
-export default Home;
+export default Home

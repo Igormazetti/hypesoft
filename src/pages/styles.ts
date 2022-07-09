@@ -1,22 +1,11 @@
-import styled from "styled-components";
-import { FaHeart } from "react-icons/fa";
-// import Image from "next/image";
+import styled from 'styled-components'
+import { FaHeart } from 'react-icons/fa'
 
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 1308px;
   padding: 0 5%;
-`;
-
-// export const StyledImage = styled(Image)`
-//   position: ;
-//   width: 760px !important;
-//   height: 974px !important;
-//   margin-right: -176px !important;
-//   z-index: 2 !important;
-//   margin-left: auto !important;
-//   filter: brightness(0.8) !important;
-// `;
+`
 
 export const HomeWrapper = styled.div`
   display: flex;
@@ -41,7 +30,7 @@ export const HomeWrapper = styled.div`
     margin-left: auto;
     filter: brightness(0.8);
   }
-`;
+`
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -87,7 +76,7 @@ export const HomeContainer = styled.div`
     margin-top: 32px;
     background-color: transparent;
   }
-`;
+`
 
 export const Footer = styled.footer`
   display: flex;
@@ -102,7 +91,7 @@ export const Footer = styled.footer`
     color: #7d00ff;
     background: transparent;
   }
-`;
+`
 
 export const PinkHeart = styled(FaHeart)`
   path {
@@ -110,4 +99,4 @@ export const PinkHeart = styled(FaHeart)`
   }
   width: 14px;
   height: 14px;
-`;
+`

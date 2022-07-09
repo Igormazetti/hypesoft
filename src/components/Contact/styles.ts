@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
   padding: 100px 0;
@@ -8,4 +8,4 @@ export const Container = styled.section`
   a {
     border-radius: 50%;
   }
-`;
+`

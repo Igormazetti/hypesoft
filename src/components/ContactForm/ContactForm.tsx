@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from "react";
+import { FiSend } from 'react-icons/fi'
+import { FC, useState, useEffect } from 'react'
 
-import { Container, Form } from "./styles";
-import Button from "../CommonBtn";
+import { CommonButton } from '../CommonBtn'
 
-import { FiSend } from "react-icons/fi";
+import { Container, Form } from './styles'
 
-const ContactForm: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+export const ContactForm: FC = () => {
+  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
 
-  const [btnDisabled, setButtonDisabled] = useState(true);
+  const [btnDisabled, setButtonDisabled] = useState(true)
 
   const resetData = () => {
-    setEmail("");
-    setName("");
-    setSubject("");
-    setMessage("");
-  };
+    setEmail('')
+    setName('')
+    setSubject('')
+    setMessage('')
+  }
 
   const verifyEmail = (em: string) => {
-    const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/;
-    return emailRegex.test(em);
-  };
+    const emailRegex = /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/
+    return emailRegex.test(em)
+  }
 
   useEffect(() => {
     const handleVerification = () => {
@@ -33,13 +33,13 @@ const ContactForm: React.FC = () => {
         subject.length >= 5 &&
         message.length > 0
       ) {
-        setButtonDisabled(false);
+        setButtonDisabled(false)
       } else {
-        setButtonDisabled(true);
+        setButtonDisabled(true)
       }
-    };
-    handleVerification();
-  }, [email, name, subject, message]);
+    }
+    handleVerification()
+  }, [email, name, subject, message])
 
   return (
     <Container>
@@ -54,8 +54,8 @@ const ContactForm: React.FC = () => {
               max="70"
               placeholder="Full Name"
               value={name}
-              onChange={(e) => {
-                setName(e.target.value);
+              onChange={e => {
+                setName(e.target.value)
               }}
             />
           </label>
@@ -68,8 +68,8 @@ const ContactForm: React.FC = () => {
               max="70"
               placeholder="Email Adress"
               value={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
+              onChange={e => {
+                setEmail(e.target.value)
               }}
             />
           </label>
@@ -82,8 +82,8 @@ const ContactForm: React.FC = () => {
             max="100"
             placeholder="Subjects"
             value={subject}
-            onChange={(e) => {
-              setSubject(e.target.value);
+            onChange={e => {
+              setSubject(e.target.value)
             }}
           />
         </label>
@@ -96,12 +96,12 @@ const ContactForm: React.FC = () => {
             rows={10}
             placeholder="Message"
             value={message}
-            onChange={(e) => {
-              setMessage(e.target.value);
+            onChange={e => {
+              setMessage(e.target.value)
             }}
           ></textarea>
         </label>
-        <Button
+        <CommonButton
           width="229px"
           text="SEND MESSAGE"
           icon={FiSend}
@@ -110,7 +110,5 @@ const ContactForm: React.FC = () => {
         />
       </Form>
     </Container>
-  );
-};
-
-export default ContactForm;
+  )
+}

@@ -1,8 +1,8 @@
-import React from "react";
+import { FC } from 'react'
 
-import { Container } from "./styles";
+import { Container } from './styles'
 
-const Header: React.FC = () => (
+export const Header: FC = () => (
   <Container>
     <div>
       <a href="#about">ABOUT</a>
@@ -11,6 +11,4 @@ const Header: React.FC = () => (
       <a href="#contact">CONTACT</a>
     </div>
   </Container>
-);
-
-export default Header;
+)
