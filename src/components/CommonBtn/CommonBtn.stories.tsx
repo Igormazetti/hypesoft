@@ -11,5 +11,5 @@ export default {
 } as ComponentMeta<typeof CommonButton>
 
 export const Primary: ComponentStory<typeof CommonButton> = () => (
-  <CommonButton width="130px" text="StoryBook Button" />
+  <CommonButton width="162px" text="CommonBtn" />
 )
