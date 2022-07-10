@@ -5,6 +5,8 @@ export const Container = styled.section`
   padding: 100px 0 121px;
   display: flex;
   gap: 88px;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 1025px) {
     padding: 50px 0 60px;
@@ -13,6 +15,8 @@ export const Container = styled.section`
 
   .bkg-img {
     position: relative;
+    justify-content: center;
+    align-items: center;
 
     .bkgimg {
       width: 540px;
@@ -40,7 +44,6 @@ export const Container = styled.section`
       .bkgimg {
         width: 440px;
         height: 442px;
-        left: 210px;
         border-radius: 10px;
         position: relative;
         z-index: 2;
@@ -55,7 +58,6 @@ export const Container = styled.section`
         background-color: #fff;
         border-radius: 10px;
         top: 32px;
-        left: 250px;
 
         z-index: 0;
       }
@@ -65,7 +67,6 @@ export const Container = styled.section`
       .bkgimg {
         width: 340px;
         height: 342px;
-        left: 33px;
         border-radius: 10px;
         position: relative;
         z-index: 2;
@@ -80,8 +81,6 @@ export const Container = styled.section`
         background-color: #fff;
         border-radius: 10px;
         top: 32px;
-        left: 65px;
-
         z-index: 0;
       }
     }
@@ -90,6 +89,14 @@ export const Container = styled.section`
 
 export const Info = styled.article`
   margin-top: 29px;
+
+  @media screen and (max-width: 1025px) {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   h4 {
     font-weight: 500;
@@ -130,8 +137,6 @@ export const Info = styled.article`
       font-size: 4rem;
       line-height: 4rem;
       color: #fff;
-      width: 652px;
-      margin-left: 100px;
     }
 
     span {
@@ -141,11 +146,6 @@ export const Info = styled.article`
       line-height: 28px;
       color: #a5a5a5;
       width: 652px;
-      margin-left: 100px;
-    }
-
-    button {
-      margin-left: 100px;
     }
   }
 
@@ -158,7 +158,6 @@ export const Info = styled.article`
       line-height: 2.5rem;
       color: #fff;
       width: 352px;
-      margin-left: 10%;
     }
 
     span {
@@ -168,11 +167,6 @@ export const Info = styled.article`
       line-height: 28px;
       color: #a5a5a5;
       width: 352px;
-      margin-left: 10%;
-    }
-
-    button {
-      margin-left: 10%;
     }
   }
 `

@@ -75,6 +75,11 @@ export const TestimonialWrapper = styled.div`
       font-weight: 400;
       font-size: 26px;
       line-height: 35px;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
 

@@ -31,6 +31,11 @@ export const Form = styled.form`
 
   label {
     background-color: transparent;
+
+    @media screen and (max-width: 1025px) {
+      display: block;
+      width: 100%;
+    }
   }
 
   div {
@@ -77,7 +82,6 @@ export const Form = styled.form`
     padding: 14px 20px;
     box-sizing: border-box;
 
-    width: 270px;
     height: 52px;
 
     border: 1px solid #dfe3eb;
@@ -87,12 +91,8 @@ export const Form = styled.form`
       outline: 1px solid #7d00ff;
     }
 
-    @media screen and (max-width: 640px) {
-      width: 200px;
-    }
-
-    @media screen and (max-width: 500px) {
-      width: 159px;
+    @media screen and (max-width: 1025px) {
+      width: 100%;
     }
   }
 
@@ -100,8 +100,11 @@ export const Form = styled.form`
     display: flex;
     gap: 16px;
     width: 100%;
-  }
 
+    @media screen and (max-width: 1025px) {
+      justify-content: space-evenly;
+    }
+  }
   textarea {
     width: 100%;
     height: 152px;

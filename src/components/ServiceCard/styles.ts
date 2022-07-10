@@ -73,6 +73,10 @@ export const Container = styled.div<CardProps>`
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 1025px) {
+      font-size: 16px;
+    }
   }
 
   .seta {
@@ -106,6 +110,12 @@ export const Container = styled.div<CardProps>`
         rgba(223, 227, 235, 0.4)
       ),
       #ffffff;
+
+    @media screen and (max-width: 1025px) {
+      > span {
+        font-size: 18px;
+      }
+    }
   }
 `
 
