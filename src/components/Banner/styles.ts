@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -7,8 +7,11 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 32px;
   padding: 64px 0;
-
   margin-top: 46px;
+
+  @media screen and (max-width: 1025px) {
+    margin-top: 26px;
+  }
 
   button {
     path {
@@ -37,4 +40,4 @@ export const Container = styled.div`
       color: #ed1ca6;
     }
   }
-`;
+`

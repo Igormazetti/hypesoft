@@ -53,7 +53,7 @@ export const Container = styled.div`
 
   .discuss-wrapper {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     margin-left: 24px;
 
     display: flex;

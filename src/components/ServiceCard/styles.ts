@@ -26,7 +26,7 @@ export const Container = styled.div<CardProps>`
   border-radius: 6px;
 
   @media screen and (max-width: 1025px) {
-    width: 250px;
+    width: 230px;
   }
 
   svg {
