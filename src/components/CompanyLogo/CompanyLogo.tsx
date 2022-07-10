@@ -9,7 +9,7 @@ import Arrow from '../../../public/assets/arrowlogo.png'
 import { Container } from './styles'
 
 export const CompanyLogo: FC = () => (
-  <Container>
+  <Container data-testid="company-logo">
     <div className="phrase">
       I worked with <span className="num">289+</span> Companies all over the
       World.
