@@ -36,6 +36,14 @@ export const HomeWrapper = styled.div`
     filter: brightness(0.8);
   }
 
+  svg {
+    position: absolute;
+    z-index: 9;
+    right: 40px;
+    top: 280px;
+    background: transparent;
+  }
+
   @media screen and (max-width: 1025px) {
     align-items: center;
     justify-content: center;
@@ -67,10 +75,23 @@ export const HomeContainer = styled.div`
       display: block;
       width: 766px;
       background: transparent;
+      position: relative;
 
       span {
         color: #7d00ff;
         background: transparent;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: calc(100% - 5rem);
+          height: 3.6rem;
+          background: rgb(125, 0, 255);
+          opacity: 0.15;
+          left: 0px;
+          bottom: 0px;
+          z-index: 0;
+        }
       }
     }
 

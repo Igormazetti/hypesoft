@@ -9,8 +9,41 @@ export const Container = styled.div`
   padding: 64px 0;
   margin-top: 46px;
 
+  position: relative;
+
   @media screen and (max-width: 1025px) {
     margin-top: 26px;
+
+    #Ellipse,
+    #BannerDots,
+    #PinkDots,
+    #LittleEllipse {
+      display: none;
+    }
+  }
+
+  #Ellipse {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  #BannerDots {
+    position: absolute;
+    left: 120px;
+    background-color: transparent;
+  }
+
+  #PinkDots {
+    position: absolute;
+    right: 158px;
+    bottom: 60px;
+  }
+
+  #LittleEllipse {
+    position: absolute;
+    right: 60px;
+    top: 26px;
   }
 
   button {
@@ -26,6 +59,7 @@ export const Container = styled.div`
   }
 
   div {
+    z-index: 2;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;

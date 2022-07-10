@@ -7,10 +7,25 @@ export const Container = styled.div`
   padding: 48px;
   gap: 24px;
 
+  position: relative;
+
   background: #ffffff;
   box-shadow: 0px 12px 24px rgba(10, 25, 49, 0.02);
   border-radius: 8px;
   color: #242424;
+
+  #PinkerDots {
+    position: absolute;
+    background-color: transparent;
+    right: -75px;
+    top: -35px;
+  }
+
+  @media screen and (max-width: 1025px) {
+    #PinkerDots {
+      display: none;
+    }
+  }
 
   h3 {
     color: #242424;

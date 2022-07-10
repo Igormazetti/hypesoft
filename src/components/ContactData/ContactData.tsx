@@ -1,6 +1,7 @@
 import { FC } from 'react'
 
 import { FollowMe } from '../FollowMe'
+import { PinkerDots } from 'assets/icons'
 
 import { RiMapPinLine } from 'react-icons/ri'
 import { AiOutlineMail } from 'react-icons/ai'
@@ -10,6 +11,8 @@ import { Container, DataWrapper } from './styles'
 
 export const ContactData: FC = () => (
   <Container data-testid="contact-data">
+    <PinkerDots />
+
     <h3>Get In Touch</h3>
     <DataWrapper>
       <div className="data-content">

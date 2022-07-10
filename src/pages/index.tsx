@@ -11,6 +11,8 @@ import { Testimonial } from '../components/Testimonial'
 import { CompanyLogo } from '../components/CompanyLogo'
 import { SelectedWork } from '../components/SelectedWork'
 
+import { Dots } from 'assets/icons'
+
 import igor from '../../public/assets/igor.png'
 import Hypesoft from '../../public/assets/hypesoft.png'
 
@@ -56,6 +58,8 @@ const Home: FC = () => (
           width={760}
           height={974}
         />
+
+        <Dots />
       </HomeWrapper>
 
       <About />
