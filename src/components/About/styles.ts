@@ -6,6 +6,11 @@ export const Container = styled.section`
   display: flex;
   gap: 88px;
 
+  @media screen and (max-width: 1025px) {
+    padding: 50px 0 60px;
+    flex-direction: column;
+  }
+
   .bkg-img {
     position: relative;
 
@@ -29,6 +34,56 @@ export const Container = styled.section`
       left: 32px;
 
       z-index: 0;
+    }
+
+    @media screen and (max-width: 1025px) {
+      .bkgimg {
+        width: 440px;
+        height: 442px;
+        left: 210px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        background: url(${bkgimg.src}) no-repeat center;
+        background-size: cover;
+      }
+
+      .imgBackground {
+        position: absolute;
+        width: 440px;
+        height: 442px;
+        background-color: #fff;
+        border-radius: 10px;
+        top: 32px;
+        left: 250px;
+
+        z-index: 0;
+      }
+    }
+
+    @media screen and (max-width: 620px) {
+      .bkgimg {
+        width: 340px;
+        height: 342px;
+        left: 33px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        background: url(${bkgimg.src}) no-repeat center;
+        background-size: cover;
+      }
+
+      .imgBackground {
+        position: absolute;
+        width: 340px;
+        height: 342px;
+        background-color: #fff;
+        border-radius: 10px;
+        top: 32px;
+        left: 65px;
+
+        z-index: 0;
+      }
     }
   }
 `
@@ -66,6 +121,60 @@ export const Info = styled.article`
   #about-btn {
     margin-top: 32px;
   }
+
+  @media screen and (max-width: 1025px) {
+    margin-top: 20px;
+
+    h4 {
+      font-weight: 500;
+      font-size: 4rem;
+      line-height: 4rem;
+      color: #fff;
+      width: 652px;
+      margin-left: 100px;
+    }
+
+    span {
+      display: block;
+      margin-top: 20px;
+      font-size: 1.3rem;
+      line-height: 28px;
+      color: #a5a5a5;
+      width: 652px;
+      margin-left: 100px;
+    }
+
+    button {
+      margin-left: 100px;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    margin-top: 20px;
+
+    h4 {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: #fff;
+      width: 352px;
+      margin-left: 10%;
+    }
+
+    span {
+      display: block;
+      margin-top: 20px;
+      font-size: 1rem;
+      line-height: 28px;
+      color: #a5a5a5;
+      width: 352px;
+      margin-left: 10%;
+    }
+
+    button {
+      margin-left: 10%;
+    }
+  }
 `
 
 export const InfoBar = styled.div`
@@ -73,6 +182,13 @@ export const InfoBar = styled.div`
   align-items: center;
   margin-top: 32px;
   gap: 50px;
+
+  @media screen and (max-width: 620px) {
+    margin-left: 5%;
+    gap: 0;
+    font-size: 14px;
+    margin-top: 12px;
+  }
 
   .first-span {
     width: 120px;
@@ -82,6 +198,11 @@ export const InfoBar = styled.div`
     font-size: 70px;
     line-height: 64px;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 620px) {
+      font-size: 35px;
+      width: 100px;
+    }
   }
 
   .second-span {
@@ -92,6 +213,10 @@ export const InfoBar = styled.div`
     font-size: 70px;
     line-height: 64px;
     margin-bottom: 15px;
+    @media screen and (max-width: 620px) {
+      font-size: 35px;
+      width: 100px;
+    }
   }
 
   div {

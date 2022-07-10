@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
   padding: 0;
@@ -8,7 +8,7 @@ export const Container = styled.section`
   justify-content: flex-start;
   gap: 50px;
   margin-top: 120px;
-`;
+`
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const TitleWrapper = styled.div`
       text-decoration-color: #7d00ff;
     }
   }
-`;
+`
 
 export const TestimonialWrapper = styled.div`
   display: flex;
@@ -34,7 +34,6 @@ export const TestimonialWrapper = styled.div`
   .testimonial {
     position: relative;
     display: flex;
-    /* padding: 50px 50px 50px 40px; */
     flex-direction: column;
     background: linear-gradient(
         0deg,
@@ -68,9 +67,8 @@ export const TestimonialWrapper = styled.div`
     }
 
     p {
-      position: absolute;
       padding: 50px 50px 0px;
-      top: 120px;
+      margin-top: 100px;
       background-color: transparent;
       color: #242424;
 
@@ -87,6 +85,11 @@ export const TestimonialWrapper = styled.div`
 
     .titles {
       display: flex;
+
+      /* @media screen and (max-width: 1025px) {
+        width: 150px;
+        height: ;
+      } */
     }
 
     .titles-content {
@@ -144,6 +147,7 @@ export const TestimonialWrapper = styled.div`
     p {
       color: #a5a5a5;
       background-color: transparent;
+      font-size: 18px;
     }
 
     span {
@@ -151,4 +155,4 @@ export const TestimonialWrapper = styled.div`
       background-color: transparent;
     }
   }
-`;
+`

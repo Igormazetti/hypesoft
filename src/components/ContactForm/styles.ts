@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 48px;
   gap: 24px;
-  width: 750px;
+  width: 100%;
 
   background: #ffffff;
   box-shadow: 0px 12px 24px rgba(10, 25, 49, 0.02);
@@ -19,7 +19,7 @@ export const Container = styled.div`
     font-size: 32px;
     line-height: 40px;
   }
-`;
+`
 
 export const Form = styled.form`
   display: flex;
@@ -86,6 +86,14 @@ export const Form = styled.form`
     &:focus {
       outline: 1px solid #7d00ff;
     }
+
+    @media screen and (max-width: 640px) {
+      width: 200px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 159px;
+    }
   }
 
   .inputs-container {
@@ -108,4 +116,4 @@ export const Form = styled.form`
       outline: 1px solid #7d00ff;
     }
   }
-`;
+`

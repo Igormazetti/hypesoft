@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
   display: flex;
@@ -7,6 +7,12 @@ export const Container = styled.section`
   width: 100%;
   padding: 80px 0;
   gap: 30px;
+
+  @media screen and (max-width: 1025px) {
+    flex-direction: column;
+    padding: 30px 0;
+    gap: 30px;
+  }
 
   .phrase {
     width: 340px;
@@ -25,6 +31,18 @@ export const Container = styled.section`
     display: flex;
     justify-content: flex-start;
     gap: 24px;
+
+    @media screen and (max-width: 1025px) {
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      gap: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 30px;
+    }
 
     .logoBtn {
       display: flex;
@@ -51,4 +69,4 @@ export const Container = styled.section`
       background-color: transparent;
     }
   }
-`;
+`

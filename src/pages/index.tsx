@@ -21,51 +21,58 @@ import {
   HomeWrapper,
   Footer,
   PinkHeart,
+  Wrapper,
 } from './styles'
 
 const Home: FC = () => (
   <Container>
-    <Header />
-    <HomeWrapper>
-      <HomeContainer>
-        <article id="greetings">
-          <p className="greetings-content">
-            Hello, I'm Igor, a <span>Software Developer.</span>
-          </p>
-          <p className="greetings-content" id="description">
-            Based in Brazil, i have been studying since 2021 to become a
-            Front-End developer, and i'm looking for my first experience as a
-            Developer.
-          </p>
-          <div id="btn-container">
-            <CommonButton width="131px" text="HIRE ME" />
-            <CommonButton width="170px" text="VIEW WORK" />
-          </div>
-        </article>
-        <FollowMe />
-      </HomeContainer>
-      <Image
-        className="igorimg"
-        src={igor.src}
-        alt="imagem de Igor"
-        width={760}
-        height={974}
-      />
+    <Wrapper>
       <div className="purpleBackground" />
-    </HomeWrapper>
-    <About />
-    <MyService />
-    <SelectedWork />
-    <CompanyLogo />
-    <Banner />
-    <Testimonial />
-    <Contact />
-    <Footer>
-      <Image src={Hypesoft} alt="Hypesoft logo" />
-      <p>
-        Made with <PinkHeart /> by Igor to <span> Hypesoft</span>
-      </p>
-    </Footer>
+      <Header />
+
+      <HomeWrapper>
+        <HomeContainer>
+          <article id="greetings">
+            <p className="greetings-content">
+              Hello, I'm Igor, a <span>Software Developer.</span>
+            </p>
+            <p className="greetings-content" id="description">
+              Based in Brazil, i have been studying since 2021 to become a
+              Front-End developer, and i'm looking for my first experience as a
+              Developer.
+            </p>
+            <div id="btn-container">
+              <CommonButton width="131px" text="HIRE ME" />
+              <CommonButton width="170px" text="VIEW WORK" />
+            </div>
+          </article>
+
+          <FollowMe />
+        </HomeContainer>
+
+        <Image
+          className="igorimg"
+          src={igor.src}
+          alt="imagem de Igor"
+          width={760}
+          height={974}
+        />
+      </HomeWrapper>
+
+      <About />
+      <MyService />
+      <SelectedWork />
+      <CompanyLogo />
+      <Banner />
+      <Testimonial />
+      <Contact />
+      <Footer>
+        <Image src={Hypesoft} alt="Hypesoft logo" />
+        <p>
+          Made with <PinkHeart /> by Igor to <span> Hypesoft</span>
+        </p>
+      </Footer>
+    </Wrapper>
   </Container>
 )
 

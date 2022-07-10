@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -18,6 +18,11 @@ export const Container = styled.div`
     #ffffff;
 
   transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 1025px) {
+    width: 230px;
+    height: 300px;
+  }
 
   &:hover {
     border: 2px solid #ed1ca6;
@@ -40,11 +45,15 @@ export const Container = styled.div`
 
     color: #242424;
     background: transparent;
+
+    @media screen and (max-width: 1025px) {
+      font-size: 18px;
+    }
   }
 
   .discuss-wrapper {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     margin-left: 24px;
 
     display: flex;
@@ -52,6 +61,10 @@ export const Container = styled.div`
     justify-content: flex-start;
     gap: 11px;
     background: transparent;
+
+    @media screen and (max-width: 1025px) {
+      bottom: 0;
+    }
   }
 
   .discuss {
@@ -70,4 +83,4 @@ export const Container = styled.div`
     height: 20px;
     background-color: transparent;
   }
-`;
+`
