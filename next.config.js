@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  pageExtensions: ['tsx'],
   swcMinify: true,
   experimental: {
     images: {
@@ -8,6 +9,6 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
