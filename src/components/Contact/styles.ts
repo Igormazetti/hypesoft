@@ -8,4 +8,8 @@ export const Container = styled.section`
   a {
     border-radius: 50%;
   }
+
+  @media screen and (max-width: 1025px) {
+    flex-direction: column;
+  }
 `

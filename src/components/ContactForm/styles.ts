@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -12,6 +12,10 @@ export const Container = styled.div`
   border-radius: 8px;
   color: #242424;
 
+  @media screen and (max-width: 640px) {
+    width: 550px;
+  }
+
   h3 {
     color: #242424;
     background-color: transparent;
@@ -19,7 +23,7 @@ export const Container = styled.div`
     font-size: 32px;
     line-height: 40px;
   }
-`;
+`
 
 export const Form = styled.form`
   display: flex;
@@ -86,6 +90,10 @@ export const Form = styled.form`
     &:focus {
       outline: 1px solid #7d00ff;
     }
+
+    @media screen and (max-width: 640px) {
+      width: 220px;
+    }
   }
 
   .inputs-container {
@@ -108,4 +116,4 @@ export const Form = styled.form`
       outline: 1px solid #7d00ff;
     }
   }
-`;
+`
