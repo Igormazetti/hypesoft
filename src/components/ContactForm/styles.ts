@@ -93,6 +93,11 @@ export const Form = styled.form`
     @media screen and (max-width: 1025px) {
       justify-content: space-evenly;
     }
+
+    @media screen and (max-width: 515px) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
   textarea {
     width: 100%;

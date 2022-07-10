@@ -19,6 +19,7 @@ export const TitleWrapper = styled.div`
   h3 {
     font-size: 40px;
     line-height: 48px;
+    text-align: center;
 
     &:hover {
       text-decoration: underline;
@@ -39,5 +40,14 @@ export const CardsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 230px);
     gap: 20px;
+  }
+
+  @media screen and (max-width: 515px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 500px;
   }
 `
