@@ -52,23 +52,12 @@ export const Form = styled.form`
     transition: filter 0.3s;
 
     &:hover:not([disabled]) {
-      filter: brightness(0.8);
+      filter: brightness(0.9);
     }
 
     &:disabled {
-      background: linear-gradient(
-          0deg,
-          rgba(223, 227, 235, 0.3),
-          rgba(223, 227, 235, 0.3)
-        ),
-        #ffffff;
-
-      cursor: default;
-      color: #242424;
-      line,
-      polygon {
-        color: #242424;
-      }
+      cursor: not-allowed;
+      filter: brightness(0.6);
     }
   }
 
