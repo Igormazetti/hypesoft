@@ -5,16 +5,12 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 48px;
   gap: 24px;
-  width: 750px;
+  width: 100%;
 
   background: #ffffff;
   box-shadow: 0px 12px 24px rgba(10, 25, 49, 0.02);
   border-radius: 8px;
   color: #242424;
-
-  @media screen and (max-width: 640px) {
-    width: 550px;
-  }
 
   h3 {
     color: #242424;
@@ -92,7 +88,11 @@ export const Form = styled.form`
     }
 
     @media screen and (max-width: 640px) {
-      width: 220px;
+      width: 200px;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 159px;
     }
   }
 
