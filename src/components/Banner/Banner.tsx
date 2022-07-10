@@ -6,7 +6,7 @@ import { CommonButton } from '../CommonBtn'
 import { Container } from './styles'
 
 export const Banner: FC = () => (
-  <Container>
+  <Container data-testid="banner">
     <div>
       Got a project in mind? Let's make <br /> something awesome
       <span> together</span>.
