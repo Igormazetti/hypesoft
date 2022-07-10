@@ -217,5 +217,6 @@ export const InfoBar = styled.div`
     display: flex;
     align-items: center;
     gap: 16px;
+    font-size: 20px;
   }
 `

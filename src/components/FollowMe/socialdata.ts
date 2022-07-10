@@ -1,7 +1,7 @@
 import { BsLinkedin } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
-import { GoMarkGithub } from 'react-icons/go'
-import { ImFacebook2 } from 'react-icons/im'
+import { BsGithub } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
 
 export const data = [
   {
@@ -10,11 +10,11 @@ export const data = [
   },
   {
     link: 'https://github.com/IgormLinkazetti',
-    imgPath: GoMarkGithub,
+    imgPath: BsGithub,
   },
   {
     link: 'https://www.facebook.com/igor.mazetti.1',
-    imgPath: ImFacebook2,
+    imgPath: BsFacebook,
   },
   {
     link: 'https://www.instagram.com/igmazetti/',

@@ -12,13 +12,7 @@ interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> = ({ nome, imgpath, link }) => (
   <Container>
-    <img
-      className="principalimg"
-      src={imgpath}
-      width="350"
-      height="332"
-      alt="foto"
-    />
+    <img className="principalimg" src={imgpath} alt="foto" />
     <p>{nome}</p>
     <div className="discuss-wrapper">
       <a target="_blank" href={link} className="discuss" rel="noreferrer">

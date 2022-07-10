@@ -33,7 +33,7 @@ export const Container = styled.div`
 
   .principalimg {
     width: 100%;
-    height: 332px;
+    height: 312px;
     border-radius: 6px 6px 0px 0px;
 
     @media screen and (max-width: 1025px) {
@@ -45,19 +45,19 @@ export const Container = styled.div`
     margin-left: 24px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 150%;
 
     color: #242424;
     background: transparent;
 
     @media screen and (max-width: 1025px) {
       font-size: 18px;
+      margin-top: -10px;
     }
   }
 
   .discuss-wrapper {
     position: absolute;
-    bottom: 5px;
+    bottom: 20px;
     margin-left: 24px;
 
     display: flex;
@@ -67,7 +67,7 @@ export const Container = styled.div`
     background: transparent;
 
     @media screen and (max-width: 1025px) {
-      margin-bottom: 0;
+      bottom: 10px;
     }
   }
 

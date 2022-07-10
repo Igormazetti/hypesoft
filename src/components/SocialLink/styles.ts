@@ -9,7 +9,7 @@ export const CustomLink = styled.a`
 
   width: 48px;
   height: 48px;
-  border: 1px solid #dfe3eb;
+  /* border: 1px solid #dfe3eb; */
   border-radius: 3px;
 
   background: #fff;
@@ -17,7 +17,7 @@ export const CustomLink = styled.a`
 
   svg {
     color: #fff;
-    border: 0.5px solid #000;
+    border: none;
     border-radius: 4px;
 
     path {
