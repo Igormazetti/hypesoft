@@ -36,7 +36,7 @@ export const HomeWrapper = styled.div`
     filter: brightness(0.8);
   }
 
-  svg {
+  > svg {
     position: absolute;
     z-index: 9;
     right: 40px;
