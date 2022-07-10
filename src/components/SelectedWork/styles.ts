@@ -5,8 +5,11 @@ export const Container = styled.div`
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-
   width: 100%;
+
+  @media screen and (max-width: 1025px) {
+    margin-top: 450px;
+  }
 `
 
 export const TitleWrapper = styled.div`
@@ -36,4 +39,10 @@ export const CardsWrapper = styled.div`
   padding: 0px;
   gap: 24px;
   margin-top: 52px;
+
+  @media screen and (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    gap: 20px;
+  }
 `
