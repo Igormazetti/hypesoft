@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.section`
   padding: 67px 0 80px;
@@ -8,7 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 50px;
-`;
+`
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const TitleWrapper = styled.div`
       text-decoration-color: #7d00ff;
     }
   }
-`;
+`
 
 export const CardsWrapper = styled.div`
   height: 351px;
@@ -34,4 +34,10 @@ export const CardsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 24px;
-`;
+
+  @media screen and (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+  }
+`

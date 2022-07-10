@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface CardProps {
-  hovering: boolean;
+  hovering: boolean
 }
 
 export const Container = styled.div<CardProps>`
@@ -25,6 +25,10 @@ export const Container = styled.div<CardProps>`
     #ffffff;
   border-radius: 6px;
 
+  @media screen and (max-width: 1025px) {
+    width: 250px;
+  }
+
   svg {
     width: 40px;
     height: 40px;
@@ -40,7 +44,7 @@ export const Container = styled.div<CardProps>`
     polyline,
     line,
     polygon {
-      color: ${({ hovering }) => (hovering ? "#ed1ca6" : "#242424")};
+      color: ${({ hovering }) => (hovering ? '#ed1ca6' : '#242424')};
     }
   }
 
@@ -103,7 +107,7 @@ export const Container = styled.div<CardProps>`
       ),
       #ffffff;
   }
-`;
+`
 
 export const Line = styled.div`
   width: 64px;
@@ -115,7 +119,7 @@ export const Line = styled.div`
 
   margin-top: 16px;
   margin-bottom: 32px;
-`;
+`
 
 export const Icone = styled.button`
   display: flex;
@@ -131,4 +135,4 @@ export const Icone = styled.button`
     width: 40px;
     height: 40px;
   }
-`;
+`

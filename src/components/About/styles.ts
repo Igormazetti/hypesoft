@@ -36,7 +36,7 @@ export const Container = styled.section`
       z-index: 0;
     }
 
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1025px) {
       .bkgimg {
         width: 440px;
         height: 442px;
@@ -122,7 +122,7 @@ export const Info = styled.article`
     margin-top: 32px;
   }
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1025px) {
     margin-top: 20px;
 
     h4 {
