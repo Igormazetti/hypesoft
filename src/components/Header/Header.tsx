@@ -3,7 +3,7 @@ import { FC } from 'react'
 import { Container } from './styles'
 
 export const Header: FC = () => (
-  <Container>
+  <Container data-testid="header">
     <div>
       <a href="#about">ABOUT</a>
       <a href="#services">SERVICES</a>

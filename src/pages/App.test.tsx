@@ -3,36 +3,7 @@ import userEvent from '@testing-library/user-event'
 import '@testing-library/jest-dom'
 import Home from '.'
 
-describe('testes da página Home', () => {
-  it('testa se os elementos corretos existem no início da página', () => {
-    render(<Home />)
-    const introduction = screen.getByText(/hello, i'm igor/i)
-    const about = screen.getByRole('link', { name: 'ABOUT' })
-    const services = screen.getByRole('link', { name: 'SERVICES' })
-    const works = screen.getByRole('link', { name: 'WORKS' })
-    const contact = screen.getByRole('link', { name: 'CONTACT' })
-
-    expect(about).toBeInTheDocument()
-    expect(services).toBeInTheDocument()
-    expect(works).toBeInTheDocument()
-    expect(contact).toBeInTheDocument()
-    expect(introduction).toBeInTheDocument()
-  })
-  it('Testa se ao clicar no link ABOUT redireciona para a seção about', () => {
-    render(<Home />)
-    const about = screen.getByRole('link', { name: 'ABOUT' })
-    userEvent.click(about)
-    const text = screen.getByText(/years of experience/i)
-    expect(text).toBeInTheDocument()
-  })
-  it('Testa se ao clicar no link Services redireciona para a seção services', () => {
-    render(<Home />)
-    const services = screen.getByRole('link', { name: 'SERVICES' })
-    userEvent.click(services)
-    const title = screen.getByText(/my service/i)
-    expect(title).toBeInTheDocument()
-  })
-})
+describe('testes da página Home', () => {})
 
 describe('testes da seção Testimonials', () => {
   it('testa se o texto da Laise inicia na tela', () => {
