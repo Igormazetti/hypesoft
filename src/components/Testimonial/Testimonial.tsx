@@ -13,7 +13,7 @@ export const Testimonial: FC = () => {
   const [speaker, setSpeaker] = useState(data[0])
 
   return (
-    <Container>
+    <Container data-testid="testimonial">
       <TitleWrapper>
         <h3>Testimonial</h3>
         <PinkLine />

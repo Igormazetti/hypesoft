@@ -24,7 +24,7 @@ import {
 } from './styles'
 
 const Home: FC = () => (
-  <Container>
+  <Container data-testid="home">
     <Wrapper>
       <div className="purpleBackground" />
       <Header />
