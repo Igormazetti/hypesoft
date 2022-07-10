@@ -42,7 +42,7 @@ export const ContactForm: FC = () => {
   }, [email, name, subject, message])
 
   return (
-    <Container>
+    <Container data-testid="contact-form">
       <h3>Let me know here.</h3>
       <Form>
         <div className="inputs-container">

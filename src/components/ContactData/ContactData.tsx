@@ -9,7 +9,7 @@ import { BsTelephone } from 'react-icons/bs'
 import { Container, DataWrapper } from './styles'
 
 export const ContactData: FC = () => (
-  <Container>
+  <Container data-testid="contact-data">
     <h3>Get In Touch</h3>
     <DataWrapper>
       <div className="data-content">

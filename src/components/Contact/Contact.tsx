@@ -6,7 +6,7 @@ import { ContactData } from '../ContactData'
 import { Container } from './styles'
 
 export const Contact: FC = () => (
-  <Container id="contact">
+  <Container id="contact" data-testid="contact">
     <ContactForm />
     <ContactData />
   </Container>
