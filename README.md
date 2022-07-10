@@ -42,4 +42,10 @@ $ yarn dev
 $ npm run dev
 ```
 
+## Realização de testes
+
+```bash
+$ yarn test "nome-do-componente"
+```
+
 Feito por Igor Mazetti 👋 [Linkedin](https://www.linkedin.com/in/igor-mazetti-de-azevedo-147679ba/)
