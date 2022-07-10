@@ -35,6 +35,10 @@ export const Container = styled.div`
     width: 100%;
     height: 332px;
     border-radius: 6px 6px 0px 0px;
+
+    @media screen and (max-width: 1025px) {
+      height: 220px;
+    }
   }
 
   p {
@@ -63,7 +67,7 @@ export const Container = styled.div`
     background: transparent;
 
     @media screen and (max-width: 1025px) {
-      bottom: 0;
+      margin-bottom: 0;
     }
   }
 
