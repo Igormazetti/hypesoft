@@ -6,7 +6,7 @@ import { CommonButton } from '../CommonBtn'
 import { Container, Info, InfoBar } from './styles'
 
 export const About: FC = () => (
-  <Container id="about">
+  <Container id="about" data-testid="about">
     <div className="bkg-img">
       <div className="bkgimg" />
       <div className="imgBackground" />

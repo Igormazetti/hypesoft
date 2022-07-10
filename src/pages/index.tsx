@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import Image from 'next/future/image'
 
 import { About } from '../components/About'
 import { Banner } from '../components/Banner'
@@ -50,7 +49,7 @@ const Home: FC = () => (
           <FollowMe />
         </HomeContainer>
 
-        <Image
+        <img
           className="igorimg"
           src={igor.src}
           alt="imagem de Igor"
@@ -67,7 +66,7 @@ const Home: FC = () => (
       <Testimonial />
       <Contact />
       <Footer>
-        <Image src={Hypesoft} alt="Hypesoft logo" />
+        <img src={Hypesoft.src} alt="Hypesoft logo" />
         <p>
           Made with <PinkHeart /> by Igor to <span> Hypesoft</span>
         </p>
