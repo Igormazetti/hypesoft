@@ -8,7 +8,7 @@ import { data } from './projectsdata'
 import { Container, TitleWrapper, CardsWrapper } from './styles'
 
 export const SelectedWork: FC = () => (
-  <Container id="works">
+  <Container id="works" data-testid="selected-work">
     <TitleWrapper>
       <h3>My Selected Work</h3>
       <PinkLine />
