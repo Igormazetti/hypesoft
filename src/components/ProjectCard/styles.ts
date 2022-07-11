@@ -84,9 +84,10 @@ export const Container = styled.div`
     text-decoration: none;
   }
 
-  .seta {
+  svg {
     width: 32px;
     height: 20px;
     background-color: transparent;
+    fill: #ed1ca6;
   }
 `

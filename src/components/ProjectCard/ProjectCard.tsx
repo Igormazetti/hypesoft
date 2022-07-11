@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import Seta from '../../../public/assets/seta.png'
+import { BsArrowRight } from 'react-icons/bs'
 
 import { Container } from './styles'
 
@@ -18,7 +18,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ nome, imgpath, link }) => (
       <a target="_blank" href={link} className="discuss" rel="noreferrer">
         VIEW PROJECT
       </a>
-      <img className="seta" src={Seta.src} alt="seta" />
+      <BsArrowRight />
     </div>
   </Container>
 )
