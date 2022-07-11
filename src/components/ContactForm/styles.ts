@@ -31,6 +31,7 @@ export const Form = styled.form`
 
   label {
     background-color: transparent;
+    width: 100%;
 
     @media screen and (max-width: 1025px) {
       display: block;
@@ -70,6 +71,7 @@ export const Form = styled.form`
     background-color: transparent;
     padding: 14px 20px;
     box-sizing: border-box;
+    width: 100%;
 
     height: 52px;
 
