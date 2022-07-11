@@ -46,9 +46,11 @@ const Home: FC = () => (
               <CommonButton width="131px" text="HIRE ME" />
               <CommonButton width="170px" text="VIEW WORK" />
             </div>
+            <div className="data-links">
+              Follow me on
+              <FollowMe />
+            </div>
           </article>
-
-          <FollowMe />
         </HomeContainer>
 
         <img

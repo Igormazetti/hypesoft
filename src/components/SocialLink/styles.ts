@@ -9,19 +9,19 @@ export const CustomLink = styled.a`
 
   width: 48px;
   height: 48px;
-  /* border: 1px solid #dfe3eb; */
+  border: 1px solid #dfe3eb;
   border-radius: 3px;
 
   background: #fff;
   transition: filter 0.2s;
 
   svg {
-    color: #fff;
+    background-color: transparent;
     border: none;
     border-radius: 4px;
 
     path {
-      fill: #fff;
+      fill: #242424;
     }
   }
 
@@ -29,5 +29,9 @@ export const CustomLink = styled.a`
     background-color: #7d00ff;
     border: none;
     filter: brightness(0.9);
+
+    path {
+      fill: #fff;
+    }
   }
 `

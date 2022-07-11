@@ -60,6 +60,17 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   position: relative;
 
+  .data-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 5px;
+    background-color: transparent;
+    margin-top: 230px;
+    gap: 10px;
+    width: 300px;
+  }
+
   #greetings {
     margin-top: 210px;
     background-color: transparent;
