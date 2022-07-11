@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 1025px) {
     margin-top: 450px;

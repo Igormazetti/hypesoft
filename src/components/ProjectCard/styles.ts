@@ -26,6 +26,8 @@ export const Container = styled.div`
 
   &:hover {
     border: 2px solid #ed1ca6;
+    transition: all 0.2s ease;
+
     .discuss {
       display: block;
     }

@@ -48,6 +48,8 @@ export const Container = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
+      border: none;
+      border-radius: 0.25rem;
       transition: all 0.2s ease-in-out;
 
       &:hover {
